@@ -1,0 +1,551 @@
+/* Сброс базовых стилей */
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  :focus,
+  :active {
+    /*outline: none;*/
+  }
+  
+  a:focus,
+  a:active {
+    /* outline: none;*/
+  }
+  
+  /* Links */
+  
+  a,
+  a:link,
+  a:visited {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+  }
+  
+  a:hover {
+    /* color: inherit; */
+    text-decoration: none;
+  }
+  
+  /* Common */
+  
+  aside,
+  nav,
+  footer,
+  header,
+  section,
+  main {
+    display: block;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  ul,
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  /* Form */
+  
+  input,
+  textarea,
+  button,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button,
+  input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+  }
+  
+  input:focus,
+  input:active,
+  button:focus,
+  button:active {
+    outline: none;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  legend {
+    display: block;
+  }
+  
+  /*Мои стили*/
+  .body {
+    font-family: "Lato", sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+    /*display:flex;
+    flex-direction: column;*/
+  }
+  
+  .title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    color: #01996d;
+  }
+  
+  /*.ibg {
+    position: relative;
+  }
+  .ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  } */
+  
+  .button {
+    background: #01996d;
+    display: block;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.25;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 0 50px;
+    /*transition: all 0.5s ease 0s;*/
+  }
+  
+  .button:hover,
+  .button:focus {
+    /*наведение на кнопку*/
+    background-color: blueviolet;
+    transition: all 1s ease 0s;
+  }
+  
+  .button:active {
+    position: relative;
+    top: 1px; /*при нажатии немного опустить вниз*/
+    background-color: aqua;
+    transition: all 0.3s ease 0s;
+  }
+  
+  /*HEADER*/
+  .header {
+    /*position:absolute;
+  width: 100%;
+  left: 0;
+  top:0;
+  z-index:1;*/
+    background-color: #ffffff;
+  }
+  
+  .header__container {
+    display: flex;
+    min-height: 85px;
+    align-items: center;
+  }
+  
+  .header__logo {
+    flex: 0 0 80px;
+  }
+  
+  .header__menu {
+    margin: 0 283px 0 173px;
+  }
+  
+  .menu {
+    white-space: nowrap;
+  }
+  
+  .menu__list {
+    display: flex;
+  }
+  
+  .menu__item:not(:last-child) {
+    margin: 0 72px 0 0;
+  }
+  
+  .menu__link {
+    color: #292929;
+    font-weight: 500;
+    /*line-height: calc(24/20*100%) 24px d %;*/
+    line-height: 1.2;
+    font-size: 21px;
+  }
+  
+  .header__sign {
+    white-space: nowrap;
+  }
+  
+  .sign {
+    flex: 1 1 auto;
+  }
+  
+  .sign__body {
+    display: flex;
+    /*justify-content: space-between;*/
+  }
+  
+  .sign__login {
+    margin: 0 35px 0 0;
+    align-self: center;
+    font-size: 21px;
+    color: #292929;
+  }
+  
+  .button_login {
+    width: 85px;
+    height: 51px;
+  }
+  
+  /*WALL*/
+  
+  /*1 section image*/
+  .wall {
+    flex: 1 1 auto;
+  }
+  
+  .main-block {
+    position: relative;
+  }
+  
+  .wall__main-block {
+    background-image: url("./img/radu-florin-CwTBt6jyagQ-unsplash\ 1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main-block__body {
+    padding: 175px 0 336px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 440px;
+  }
+  .main-block__title {
+    font-size: 65px;
+    line-height: 1.13;
+    margin-bottom: 30px;
+  }
+  
+  .main-block__text {
+    font-size: 21px;
+    line-height: 1.57;
+    margin-bottom: 19px;
+    min-height: 123px;
+    max-width: 420px;
+  }
+  
+  .button_main {
+    width: 123px;
+    height: 64px;
+  }
+  
+  /*.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }*/
+  
+  /*2 section step*/
+  .wall__steps {
+    padding-top: 172px;
+  }
+  .step {
+    background-color: #f5f5f5;
+  }
+  
+  .step__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  .step__body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item__body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /*max-width: 1391px;
+    justify-content: space-between;*/
+  }
+  
+  .item__title {
+    max-width: 580px;
+    font-size: 50px;
+    line-height: 1.56;
+    margin-right: 136px;
+    align-self: flex-start;
+  }
+  .item__text {
+    font-weight: 500;
+    line-height: 1.4;
+    padding-top: 20px;
+    max-width: 658px;
+    font-size: 22px;
+  }
+  
+  .item-card {
+    display: flex;
+  }
+  
+  .item-card__row {
+    max-width: 390px;
+  }
+  .item-card__row_1 {
+    margin: 52px 95px 0 0;
+  }
+  .item-card__row_2 {
+    margin: 337px 46px 0 0;
+  }
+  .item-card__row_3 {
+    margin: 106px 0 0 46px;
+    padding-left: 10px;
+  }
+  .item-card__number {
+    color: #01996d;
+    font-size: 150px;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    opacity: 0.2;
+  }
+  
+  .item-card__title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  
+  .item-card__text {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 37px;
+  }
+  
+  .item-card__row_1 .item-card__text {
+    max-width: 350px;
+    margin-bottom: 60px;
+  }
+  
+  .item-card__row_1 .item-card__title {
+    margin: -90px 0 55px 85px;
+  }
+  
+  .item-card__row_2 .item-card__title {
+    margin: -90px 0 55px 70px;
+  }
+  
+  .item-card__row_3 .item-card__title {
+    margin: -90px 0 46px 120px;
+  }
+  
+  .item-card__image {
+    border-radius: 8px;
+  }
+  
+  .item-card__row_2 .item-card__image {
+    margin-bottom: 49px;
+  }
+  
+  .image__icon {
+    margin: -257px 0 0 202px;
+  }
+  /*3 section video*/
+  
+  .wall__story {
+    background-color: #245852;
+  }
+  .story {
+    padding-top: 307px;
+  }
+  .story__container {
+    max-width: 1511px;
+  }
+  .story__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .story__row {
+    margin-bottom: 177px;
+  }
+  
+  .item-kayla {
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .item-kayla__title {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 33px;
+  }
+  
+  .item-kayla__text {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 57px;
+    line-height: 1.5;
+  }
+  
+  .button_story {
+    width: 140px;
+    height: 64px;
+  }
+  
+  .item-video__body {
+    margin: -83px 0 0 33px;
+  }
+  
+  /*4 section product*/
+  .wall__product {
+    background-color: #f5f5f5;
+  }
+  .product {
+    padding-top: 120px;
+  }
+  
+  .product__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item-product__row .item-product__row_1 {
+    background-color: #01996d;
+    flex: 0 0 600px;
+  }
+  .item-product__image {
+    position: relative;
+    margin: 0 0 241px 58px;
+  }
+  
+  .item-product__card {
+    position: absolute;
+    bottom: -91px;
+    left: -76px;
+  }
+  
+  .item-product__about {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .item-product__title {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    color: #01996d;
+    margin-bottom: 20px;
+    max-width: 591px;
+  }
+  
+  .item-product__text {
+    line-height: 1.4;
+    margin-bottom: 36px;
+    font-size: 21px;
+    max-width: 530px;
+  }
+  
+  .button_product {
+    width: 127px;
+    height: 64px;
+  }
+  /*FOOTER*/
+  .footer {
+    background-color: #245852;
+  }
+  
+  .footer__menu {
+    margin-top: 60px;
+  }
+  .footer__body {
+    padding-top: 95px;
+  }
+  .footer__title {
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.4;
+  }
+  
+  .menu-footer {
+    margin-bottom: 144px;
+  }
+  
+  .menu-footer__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .menu-footer__link {
+    color: #ffffff;
+    font-weight: 5600;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  
